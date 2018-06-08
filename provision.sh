@@ -104,7 +104,7 @@ EOF
     {
         "registry-mirrors": ["https://registry.docker-cn.com"]
     }
-    EOF
+EOF
     
     apt-get install language-pack-UTF-8
    
