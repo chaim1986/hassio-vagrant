@@ -106,7 +106,7 @@ EOF
     }
 EOF
     
-    apt-get install language-pack-UTF-8
+    apt-get install -y language-pack-UTF-8
    
     systemctl daemon-reload
     systemctl restart docker
