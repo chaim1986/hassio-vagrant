@@ -96,21 +96,18 @@ EOF
 
     apt-get update
     apt-get install -y docker-ce
-
-    usermod -aG docker ubuntu
     
-    # add mirror for china uers
-    cat >>/etc/docker/daemon.json<<EOF
+    
+     # add mirror for china uers
+     mkdir -p /etc/docker
+     touch /etc/docker/daemon.json 
+       cat >>/etc/docker/daemon.json<<EOF
     {
         "registry-mirrors": ["https://registry.docker-cn.com"]
     }
 EOF
-    
-  
-   
-    systemctl daemon-reload
-    systemctl restart docker
-    
+
+    usermod -aG docker ubuntu    
 }
 
 # ------------------------------------------------------------------------------
