@@ -82,7 +82,7 @@ the repository into a folder within your "home" directory.
 cd ~
 
 # Clone this repository into a folder called `hassio`
-git clone https://github.com/hassio-addons/hassio-vagrant.git hassio
+git clone https://github.com/chaim1986/hassio-vagrant hassio
 ```
 
 You should check out a tagged version of `hassio-vagrant` since the `master`
